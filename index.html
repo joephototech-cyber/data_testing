@@ -6,16 +6,13 @@
   <title>Greenhouse Gas Emissions 2025</title>
   <script defer src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script defer src="script.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="chartscript.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Greenhouse Gas Emissions 2025</h1>
-  <p id="dataStatus" role="status">Loading emissions data...</p>
-  <p id="fileControls" hidden>
-    <label for="csvFile">Open greenhouse_gas_emissions_2025_clean.csv:</label>
-    <input id="csvFile" type="file" accept=".csv,text/csv">
-  </p>
-  <noscript>Enable JavaScript to display the data table.</noscript>
+  <canvas id="revenueChart"></canvas>
   <table id="dataTable">
     <thead>
       <tr>
