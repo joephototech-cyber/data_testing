@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenhouse Gas Emissions 2025</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Greenhouse Gas Emissions 2025</h1>
+  <p id="dataStatus" role="status">Loading emissions data...</p>
+  <p id="fileControls" hidden>
+    <label for="csvFile">Open greenhouse_gas_emissions_2025_clean.csv:</label>
+    <input id="csvFile" type="file" accept=".csv,text/csv">
+  </p>
+  <noscript>Enable JavaScript to display the data table.</noscript>
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Country</th>
+        <th>Year</th>
+        <th>Emissions</th>
+        <th>Unit</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <p>Data from <a href='https://datacommons.org'>Data Commons</a></p>
+</body>
+</html>
